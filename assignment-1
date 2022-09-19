@@ -1,0 +1,68 @@
+#Lists : A list is an immutable one.it is denoted as[].it is similar array in a java and c..
+alphabets=['a','b','c','d','e','f']
+print(alphabets)
+alphabets.insert(6,'h')
+print(alphabets)
+alphabets.append('i')
+print(alphabets)
+alphabets.remove('i')
+print(alphabets)
+#slicing : it is simply nothing but giving the values or alphabets are from a certain range...
+alphabets=['a','b','c','d','e','f']
+print(alphabets)
+print(alphabets[0:3])
+print(alphabets[-3:-1])
+print(alphabets[9:90])
+print(alphabets[-4:-3])
+#tuples : these are muttable ones,In which we cannot insert or update the values of the data..
+#these are denoted as ()...
+Fruits=('apples','Oranges','Grapes','Pineapples','Bananas')
+print(Fruits) 
+#Slicing in tuples..
+print(Fruits[0:3])
+print(Fruits[4:6])
+print(Fruits[-5:-1])
+print(Fruits[-90:-4])
+print(Fruits[-1:0])
+#Dictionary:These are immutable ones for some cases and these can be represented as {}...
+#these also consists of some values for each data in it
+#example:Tesla:100k..
+cars={'rangerover':'1cr','Tesla':'90 lakh','Benz':'50 lakh','Audi':'40 lakh'}
+print(cars)
+cars.update({'rangerover':'120cr'})
+print(cars)
+cars.update({'Audi':'70cr'})
+print(cars)
+cars.clear()
+print(cars)
+#del cars['rangerover']
+print(cars)
+#cars.pop('Benz')
+print(cars)
+#slicing in an Dictionary..
+cars={'rangerover':'1cr','Tesla':'90 lakh','Benz':'50 lakh','Audi':'40 lakh'}
+print(cars)
+keys_for_slicing=["Tesla","Benz"]
+sliced_cars = {key:cars[key] for key in keys_for_slicing}
+print(cars)
+keys_for_slicing=["Audi"]
+sliced_cars = {key:cars[key] for key in keys_for_slicing} 
+print(cars)
+
+Outputs:
+'apples', 'Oranges', 'Grapes', 'Pineapples', 'Bananas')
+('apples', 'Oranges', 'Grapes')
+('Bananas',)
+('apples', 'Oranges', 'Grapes', 'Pineapples')
+('apples',)
+()
+{'rangerover': '1cr', 'Tesla': '90 lakh', 'Benz': '50 lakh', 'Audi': '40 lakh'}
+{'rangerover': '120cr', 'Tesla': '90 lakh', 'Benz': '50 lakh', 'Audi': '40 lakh'}
+{'rangerover': '120cr', 'Tesla': '90 lakh', 'Benz': '50 lakh', 'Audi': '70cr'}
+{}
+{}
+{}
+{'rangerover': '1cr', 'Tesla': '90 lakh', 'Benz': '50 lakh', 'Audi': '40 lakh'}
+{'rangerover': '1cr', 'Tesla': '90 lakh', 'Benz': '50 lakh', 'Audi': '40 lakh'}
+{'rangerover': '1cr', 'Tesla': '90 lakh', 'Benz': '50 lakh', 'Audi': '40 lakh'}
+PS C:\Users\chowd>
